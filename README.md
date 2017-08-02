@@ -10,10 +10,10 @@ android {
             targetSdkVersion 23
             versionCode 206
             versionName "1.4.33.1"
-            manifestPlaceholders = [app_name : "탑툰",
-                                    kakao_key : "40324bafc392f49b7f052724afd17a71",
-                                    igaworks_key : "573659521",
-                                    igaworks_hash : "dd6839e3f337411e"]
+            manifestPlaceholders = [app_name : "APP_NAME",
+                                    kakao_key : "KAKAO_KEY1",
+                                    igaworks_key : "IGAWORKS_KEY1",
+                                    igaworks_hash : "IGAWORKS_HASH1"]
             sourceSets {
                 main {
                     manifest.srcFile 'src/google/AndroidManifest.xml'
@@ -26,10 +26,10 @@ android {
             targetSdkVersion Integer.parseInt(project.TARGET_VER)
             versionCode 206
             versionName "2.0.20.1"
-            manifestPlaceholders = [app_name : "PLUS",
-                                    kakao_key : "2b4cfccb471797c3b104f7032cc62784",
-                                    igaworks_key : "106643164",
-                                    igaworks_hash : "60dd9e4a99974bc9"]
+            manifestPlaceholders = [app_name : "APP_NAME",
+                                    kakao_key : "KAKAO_KEY2",
+                                    igaworks_key : "IGAWORKS_KEY2",
+                                    igaworks_hash : "IGAWORKS_HASH2"]
             sourceSets {
                 main{
                     manifest.srcFile 'src/origin/AndroidManifest.xml'
@@ -42,10 +42,10 @@ android {
             targetSdkVersion 23
             versionCode 207
             versionName "2.0.21.1"
-            manifestPlaceholders = [app_name : "탑툰",
-                                    kakao_key : "40324bafc392f49b7f052724afd17a71",
-                                    igaworks_key : "216500354",
-                                    igaworks_hash : "7f3e03c7d4e14d01"]
+            manifestPlaceholders = [app_name : "APP_NAME",
+                                    kakao_key : "KAKAO_KEY3",
+                                    igaworks_key : "IGAWORKS_KEY3",
+                                    igaworks_hash : "IGAWORKS_HASH3"]
             sourceSets {
                 main {
                     manifest.srcFile 'src/tstore/AndroidManifest.xml'
@@ -58,6 +58,9 @@ android {
 
 
 ```
+* applicationIdSuffix 는 패키지명 다음에 붙는다.
+* manifestPlaceholders key-value 형식으로 google, origin, tstore 의 AndroidManifest에서 ${app_name} 으로 사용한다
+
 
 ## 프로젝트 구조
 
