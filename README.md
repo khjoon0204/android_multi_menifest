@@ -60,7 +60,7 @@ android {
 ```
 * applicationIdSuffix 는 패키지명 다음에 붙는다.
 * manifestPlaceholders key-value 형식으로 google, origin, tstore 의 AndroidManifest에서 ${app_name} 으로 사용한다
-
+* sourceSets 에서 Manifest 위치 지정
 
 ## 프로젝트 구조
 
