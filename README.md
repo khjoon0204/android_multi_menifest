@@ -71,3 +71,12 @@ android {
 ```
 package="com.toptooncomics.topviewer"
 ```
+
+## 코드에서 사용
+```
+String package_name = getApplicationContext().getPackageName();
+
+```
+
+* getApplicationContext().getPackageName() 은 applicationID 를 가져온다
+* 패키지명으로 구분해서 처리
